@@ -73,6 +73,75 @@ extension UITextField {
     }
 }
 
+@IBDesignable
+class MGRoundView: UIView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override open func awakeFromNib() {
+        super.awakeFromNib()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+    override open func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+}
+
+@IBDesignable
+class MGRoundImageView: UIImageView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override open func awakeFromNib() {
+        super.awakeFromNib()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+    override open func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+}
+
+@IBDesignable
+class MGRoundButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override open func awakeFromNib() {
+        super.awakeFromNib()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+    override open func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.cornerRadius = self.frame.width / 2
+    }
+    
+}
+
 
 @IBDesignable
 class MGCheckbox: UIButton {
@@ -93,7 +162,6 @@ class MGCheckbox: UIButton {
     override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
-    
     
     @IBInspectable var checked: Bool = true {
         didSet{
@@ -201,7 +269,6 @@ class MGCheckbox: UIButton {
             self.placeholder = ""
         }
     }
-    
     
     @IBInspectable var leftInset : CGFloat = 0
     @IBInspectable var rightInset : CGFloat = 0

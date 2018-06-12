@@ -57,7 +57,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholder" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="focussedBorderColor">
-                                        <color key="value" red="1" green="0.15370798490000001" blue="0.2836977423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,18 +77,114 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="validBorderColor">
+                                        <color key="value" red="0.039027399829999997" green="0.68171146370000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorBorderColor">
+                                        <color key="value" red="1" green="0.15370798490000001" blue="0.2836977423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-qy-lwn" customClass="MGRoundView" customModule="MGExtensions" customModuleProvider="target">
+                                <rect key="frame" x="8" y="559" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.15370798490000001" blue="0.2836977423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NM3-UG-vZp"/>
+                                    <constraint firstAttribute="height" constant="100" id="WpN-uz-I2i"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-BV-JJr" customClass="MGRoundButton" customModule="MGExtensions" customModuleProvider="target">
+                                <rect key="frame" x="116" y="559" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ay0-7p-jt2"/>
+                                    <constraint firstAttribute="width" constant="100" id="qx1-bm-EBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="BUTTON!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-sz-K4k" customClass="MGRoundImageView" customModule="MGExtensions" customModuleProvider="target">
+                                <rect key="frame" x="224" y="559" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="L9b-S8-TPW"/>
+                                    <constraint firstAttribute="width" constant="100" id="fdd-pi-5GD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PLACEHOLDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWo-oI-kka" customClass="MGTextField" customModule="MGExtensions" customModuleProvider="target">
+                                <rect key="frame" x="16" y="166" width="234" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="mbh-qI-xCF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="focussedBorderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="validBorderColor">
+                                        <color key="value" red="0.039027399829999997" green="0.68171146370000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorBorderColor">
+                                        <color key="value" red="1" green="0.15370798490000001" blue="0.2836977423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1f5-WG-uFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Qc-Mj-Q0f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YCw-sz-K4k" secondAttribute="bottom" constant="8" id="BC5-zw-3fp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tg5-BV-JJr" secondAttribute="bottom" constant="8" id="Ef4-W2-Ei5"/>
                             <constraint firstItem="CpZ-e5-R6w" firstAttribute="top" secondItem="ZQa-Es-nlx" secondAttribute="bottom" constant="8" id="Gcv-PC-EWr"/>
+                            <constraint firstItem="YCw-sz-K4k" firstAttribute="leading" secondItem="Tg5-BV-JJr" secondAttribute="trailing" constant="8" id="Ibg-zL-6H4"/>
                             <constraint firstItem="ZQa-Es-nlx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OiZ-Uh-m7h"/>
                             <constraint firstItem="CpZ-e5-R6w" firstAttribute="leading" secondItem="ZQa-Es-nlx" secondAttribute="leading" id="Otp-IR-VFU"/>
+                            <constraint firstItem="XWo-oI-kka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uu5-UN-2Ki"/>
                             <constraint firstItem="CpZ-e5-R6w" firstAttribute="width" secondItem="ZQa-Es-nlx" secondAttribute="width" id="dZM-71-qaq"/>
+                            <constraint firstItem="Tg5-BV-JJr" firstAttribute="leading" secondItem="Kxf-qy-lwn" secondAttribute="trailing" constant="8" id="hsI-dt-kIV"/>
                             <constraint firstItem="ZQa-Es-nlx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="llj-dZ-RBA"/>
+                            <constraint firstItem="XWo-oI-kka" firstAttribute="top" secondItem="1f5-WG-uFf" secondAttribute="bottom" constant="16" id="mGc-Se-ckn"/>
+                            <constraint firstItem="Kxf-qy-lwn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qax-Gz-nFe"/>
                             <constraint firstItem="1f5-WG-uFf" firstAttribute="top" secondItem="CpZ-e5-R6w" secondAttribute="bottom" constant="24" id="s9S-vJ-6Wa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kxf-qy-lwn" secondAttribute="bottom" constant="8" id="yTa-i0-blY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -101,5 +197,6 @@
     <resources>
         <image name="cbOff.png" width="50" height="50"/>
         <image name="cbOn.png" width="50" height="50"/>
+        <image name="mountain.jpg" width="5312" height="2988"/>
     </resources>
 </document>
