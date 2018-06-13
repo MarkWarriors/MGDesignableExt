@@ -89,6 +89,11 @@ class MGRoundView: UIView {
         self.cornerRadius = self.frame.width / 2
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.mgpcCornerRadius = self.frame.width / 2
+    }
+    
     override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.cornerRadius = self.frame.width / 2
@@ -111,7 +116,12 @@ class MGRoundImageView: UIImageView {
         super.awakeFromNib()
         self.cornerRadius = self.frame.width / 2
     }
-    
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.mgpcCornerRadius = self.frame.width / 2
+    }
+
     override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.cornerRadius = self.frame.width / 2
@@ -133,6 +143,11 @@ class MGRoundButton: UIButton {
     override open func awakeFromNib() {
         super.awakeFromNib()
         self.cornerRadius = self.frame.width / 2
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.mgpcCornerRadius = self.frame.width / 2
     }
     
     override open func prepareForInterfaceBuilder() {
